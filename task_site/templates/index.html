@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Tasks</h1>
+
+    <form method="post">
+      <input type="text" name="task" placeholder="Enter new task..." required>
+      <button type="submit">Add</button>
+    </form>
+
+    <ul>
+      {% for task in tasks %}
+        <li>
+            {{ task }}
+            <form method="post" style="display:inline">
+                <button class="remove-btn" type="submit" name="remove" value="{{ loop.index0 }}">-</button>
+            </form>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</body>
+</html>
