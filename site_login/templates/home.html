@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Hello, {{ user }}!</h1>
-    <a href="/logout">Back</a>
+    {% if user == "admin" %}
+        <h1>Welcome Administrator!</h1>
+    {% elif user == "user" %}
+        <h1>Hello, regular user!</h1>
+    {% elif user == "test" %}
+        <h1>Testing mode activated!</h1>
+    {% else %}
+        <h1>Hello, {{ user }}!</h1>
+    {% endif %}
+    <a href="{{ url_for('logout') }}">Logout</a>
+    <a href="{{ url_for('profile') }}">Profile</a>
 </body>
 </html>
