@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shorten</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to shortener site!</h1>
+        <p>What you want short?</p>
+        <form method="post">
+            <input type="url" name="link" placeholder="Paste your link here..." required>
+            <button type="submit">Create</button>
+        </form>
+        {% if fail %}
+            <p class="fail">Wrong link, try another time</p>
+        {% endif %}
+
+        {% if short_url %}
+            <p><strong>Short:</strong> <a href="{{ short_url }}">{{ short_url }}</a></p>
+            <p><strong>Original:</strong> <a href="{{ long_url }}">{{ long_url }}</a></p>
+        {% endif %}
+    </div>
+</body>
+</html>

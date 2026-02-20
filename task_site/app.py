@@ -15,7 +15,7 @@ def index():
             index_to_remove = int(request.form["remove"])
             tasks.pop(index_to_remove)
         return redirect("/")
-    return render_template("index.html", tasks=tasks)
+    return render_template("shorten.html", tasks=tasks)
 
 if __name__ == "__main__":
     app.run(debug=True)
