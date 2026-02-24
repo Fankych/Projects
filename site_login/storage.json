@@ -1,8 +1,12 @@
 {
     "links": {
-        "iLbqtJ": {
+        "Svx85L": {
+            "long_url": "https://yandex.ru",
+            "user_id": 1
+        },
+        "QbTvSw": {
             "long_url": "https://google.com",
-            "user_id": "admin"
+            "user_id": 2
         }
     }
 }

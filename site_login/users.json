@@ -1,0 +1,22 @@
+{
+    "users": {
+        "admin": {
+            "id": 1,
+            "login": "admin",
+            "password_hash": "scrypt:32768:8:1$zRJYxAW6B69KRYeO$7cc6ed5085e3b4f73b43da13570b4065433b5c5e4801a3c916edde9e4dc97342beebd9253429d200eb94c65f89546c1b0827e96fb774116f5f0a8b30d80a8e93"
+        },
+        "user": {
+            "id": 2,
+            "login": "user",
+            "password_hash": "scrypt:32768:8:1$hQ86TL3HDINQGRwo$89c3d0295922d840db978aa274b53a3818815bf8c3c340420918e74b817236c08090b65a1feac2add1c2e96c3371d96929696ebef4968f2e379e932c6d8fe0c1"
+        },
+        "ulik": {
+            "id": 3,
+            "login": "ulik",
+            "password_hash": "scrypt:32768:8:1$xZdfW5xRHmgnJpxk$9427982dc279e7309f50bc1f09d9fab4db0f36494d2afe6e5265bf0101b345e3012fd80e3540e8721131f12f0ce27a8a63d8c62d2c62df4723d43fbe2f6937a0"
+        }
+    },
+    "meta": {
+        "next_user_id": 4
+    }
+}
