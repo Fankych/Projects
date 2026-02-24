@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Profile of {{ user }}</h1>
-    <a href="{{ url_for('logout') }}">Logout</a>
+    <div class="container_profile">
+        <h1>Profile of {{ user }}</h1>
+        <a href="{{ url_for('logout') }}" class="btn_back">Logout</a>
+        <a href="{{ url_for('home') }}" class="btn">Home</a>
+    </div>
 </body>
 </html>

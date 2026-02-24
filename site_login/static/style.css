@@ -14,12 +14,43 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
+.container_profile {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
 input, button, .btn {
     display: block;
     width: 100%;
     margin-top: 10px;
     padding: 10px;
     border-radius: 7px;
+    border: 1px solid #ccc;
+}
+
+.btn_sign {
+    cursor: pointer;
+    background: cyan;
+    display: block;
+    width: 90%;
+    margin: 6px;
+    padding: 9px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.btn_back {
+    cursor: pointer;
+    background: #B22222;
+    display: block;
+    width: 90%;
+    margin: 6px;
+    padding: 9px;
+    border-radius: 6px;
     border: 1px solid #ccc;
 }
 

@@ -12,7 +12,7 @@
         <form method="post">
             <input type="url" name="link" placeholder="Paste your link here..." required>
             <button type="submit">Create</button>
-            <a href="{{ url_for('home') }}" class="btn">Back</a>
+            <a href="{{ url_for('home') }}" class="btn_back">Back</a>
         </form>
         {% if fail %}
             <p class="fail">Wrong link, try another time</p>
